@@ -128,7 +128,7 @@
                     Width="{Binding ElementName=anchoSlider, Path=Value}"
                     BorderThickness="{Binding ElementName=bordeCheckBox, Path=IsChecked, Mode=OneWay, Converter={StaticResource conversorBorde}}">
                 <Grid>
-                    <Image Stretch="Fill" Width="468" Source="{Binding ElementName=imagenTextBox, Path=Text, Mode=OneWay}"/>
+                    <Image Stretch="Fill" Width="468" Source="{Binding ElementName=imagenTextBox, Path=Text}"/>
                     <TextBlock Style="{StaticResource textoMeme}" Text="{Binding ElementName=superiorTextBox, Path=Text}"
                                VerticalAlignment="Top"></TextBlock>
                     <TextBlock Style="{StaticResource textoMeme}" Text="{Binding ElementName=superiorTextBox, Path=Text}"
