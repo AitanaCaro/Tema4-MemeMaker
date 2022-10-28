@@ -124,14 +124,14 @@
                     Background="#FFF3D2D2"
                     BorderBrush="Black"
                     Margin="10"
-                    Height="{Binding ElementName=altoSlider, Path=Value, Mode=OneWay}"
-                    Width="{Binding ElementName=anchoSlider, Path=Value, Mode=OneWay}"
+                    Height="{Binding ElementName=altoSlider, Path=Value}"
+                    Width="{Binding ElementName=anchoSlider, Path=Value}"
                     BorderThickness="{Binding ElementName=bordeCheckBox, Path=IsChecked, Mode=OneWay, Converter={StaticResource conversorBorde}}">
                 <Grid>
                     <Image Stretch="Fill" Width="468" Source="{Binding ElementName=imagenTextBox, Path=Text, Mode=OneWay}"/>
-                    <TextBlock Style="{StaticResource textoMeme}" Text="{Binding ElementName=superiorTextBox, Path=Text, Mode=OneWay}"
+                    <TextBlock Style="{StaticResource textoMeme}" Text="{Binding ElementName=superiorTextBox, Path=Text}"
                                VerticalAlignment="Top"></TextBlock>
-                    <TextBlock Style="{StaticResource textoMeme}" Text="{Binding ElementName=superiorTextBox, Path=Text, Mode=OneWay}"
+                    <TextBlock Style="{StaticResource textoMeme}" Text="{Binding ElementName=superiorTextBox, Path=Text}"
                                VerticalAlignment="Bottom"></TextBlock>
                 </Grid>
             </Border>
